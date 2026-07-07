@@ -33,6 +33,40 @@
   white-space: nowrap;
 }
 
+/* ===== Brand lockup — 시설통(주 브랜드명) + 법정점검 통합관리센터(설명) ===== */
+.logo-text, .footer-logo-text, .simple-footer-name {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
+  line-height: 1;
+}
+.brand-name {
+  font-family: var(--font-display);
+  font-weight: var(--fw-black);
+  letter-spacing: var(--ls-tight);
+  white-space: nowrap;
+}
+.brand-desc {
+  font-family: var(--font-body);
+  font-weight: var(--fw-semibold);
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+  opacity: 0.66;
+}
+/* header */
+.logo-text .brand-name { font-size: 20px; color: var(--navy-800); }
+.logo-text .brand-desc { font-size: 11px; }
+/* main footer + simple footer (dark) */
+.footer-logo-text .brand-name,
+.simple-footer-name .brand-name { font-size: 18px; color: var(--white); }
+.footer-logo-text .brand-desc,
+.simple-footer-name .brand-desc { font-size: 10.5px; }
+@media (max-width: 600px) {
+  .logo-text .brand-name { font-size: 18px; }
+  .logo-text .brand-desc { font-size: 10px; }
+}
+
 .nav { display: flex; align-items: center; gap: 28px; }
 .nav-link {
   font-size: var(--fs-body-sm);
