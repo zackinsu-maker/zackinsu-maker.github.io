@@ -1,0 +1,13 @@
+User-agent: *
+   Allow: /
+
+   User-agent: Yeti
+   Allow: /
+
+   User-agent: Googlebot
+   Allow: /
+
+   User-agent: Daum
+   Allow: /
+
+   Sitemap: https://www.04b.kr/sitemap.xml
